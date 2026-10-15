@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Androidアプリ『きょうからダイエット』の操作手順書">
+  <meta name="theme-color" content="#137c70">
+  <title>操作手順書｜きょうからダイエット</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="hero"><div class="wrap"><p class="eyebrow">きょうからダイエット</p><h1>操作手順書</h1><p class="lead">全部を毎日入力する必要はありません。写真や短文だけでも保存し、空白ができても今日から再開できます。</p><dl class="dates"><div><dt>対象</dt><dd>Android版 0.1.0</dd></div><div><dt>更新日</dt><dd>2026年10月15日</dd></div></dl></div></header>
+  <main class="wrap policy">
+    <aside class="summary"><h2>まず覚えること</h2><ul><li>画面下の「ホーム」「記録」「設定」で移動します。</li><li>食事は写真または短文だけ、運動は種類だけでも保存できます。</li><li>体重は測った日に入力します。毎日の入力は必須ではありません。</li><li>AI解析、歩数連携、通知は希望する場合だけ有効にします。</li></ul></aside>
+
+    <section><h2>目次</h2><ol class="toc"><li><a href="#start">初回設定</a></li><li><a href="#home">ホーム画面</a></li><li><a href="#meal">食事を記録</a></li><li><a href="#ai">写真のAI解析</a></li><li><a href="#activity">運動を記録</a></li><li><a href="#weight">体重を記録</a></li><li><a href="#history">記録の確認・修正</a></li><li><a href="#gap">空白期間の補完</a></li><li><a href="#steps">歩数の取り込み</a></li><li><a href="#prediction">体重変化の試算</a></li><li><a href="#notification">通知</a></li><li><a href="#backup">バックアップ</a></li><li><a href="#privacy">データ利用と削除</a></li><li><a href="#trouble">困ったとき</a></li></ol></section>
+
+    <section id="start"><h2>1. 初回設定</h2><div class="step"><strong>1.</strong> アプリを開き、年齢、身長、体重を登録します。</div><div class="step"><strong>2.</strong> 妊娠・授乳中、治療中、医師から食事・運動の指示を受けているかを回答します。</div><div class="step"><strong>3.</strong> 体重試算を使う場合は、設定から計算区分、普段の仕事や家事、余暇の活動、最近の生活変化を回答します。</div><p class="note">健康状態に該当する場合や判断できない場合は、自己判断の減量数値を控え、記録と振り返りを中心に表示します。病名や薬の詳しい入力は求めません。</p></section>
+
+    <section id="home"><h2>2. ホーム画面</h2><p>最近の体重、今日の食事記録、体重試算の準備状況を確認できます。「今日、ひとつ残せたら。」の案内どおり、分かる記録だけを残せます。</p><h3>新しく記録する</h3><p>「記録」タブの先頭にある「食事を記録」「運動を記録」「体重を記録」を選びます。</p></section>
+
+    <section id="meal"><h2>3. 食事を記録</h2><div class="step"><strong>1.</strong> 「記録」→「食事を記録」を選びます。</div><div class="step"><strong>2.</strong> 日付と朝食・昼食・夕食・間食・その他の区分を選びます。</div><div class="step"><strong>3.</strong> 「写真を選ぶ」または「撮影する」を選びます。写真なしで短文だけ入力してもかまいません。</div><div class="step"><strong>4.</strong> 分かる場合だけ、食事メモ、量、食品情報を入力します。</div><div class="step"><strong>5.</strong> 「保存する」を押します。</div><p>同じ食事区分を一日に複数回記録できます。未記録や未算出は0 kcalとして扱いません。</p></section>
+
+    <section id="ai"><h2>4. 写真のAI解析</h2><h3>有効にする</h3><div class="step">「設定」→「データと連携」を開き、「食事保存後にAIで自動計算」をオンにします。</div><p>説明を確認して有効にした場合だけ、保存後の食事写真とその食事欄の短文をRailway経由でAnthropic Claudeへ送ります。</p><h3>候補を確認する</h3><p>料理、量、カロリー範囲、確認事項が表示されます。内容に誤りがないか確認し、そのまま採用、修正して採用、または使わず戻ることができます。</p><p class="note">AIの値は推定です。写真に写った量と実際に食べた量が異なる場合があります。不確かな候補は自動で確定しません。AIを使わなくても記録できます。</p></section>
+
+    <section id="activity"><h2>5. 運動を記録</h2><div class="step"><strong>1.</strong> 「記録」→「運動を記録」を選びます。</div><div class="step"><strong>2.</strong> 運動の種類を選びます。種類だけでも保存できます。</div><div class="step"><strong>3.</strong> 分かる場合は強さと時間を入力し、「保存する」を押します。</div><p>消費カロリーは、健康状態の確認、対象に合うMET値、運動時間、同日の本人入力体重が揃った場合だけ計算します。</p></section>
+
+    <section id="weight"><h2>6. 体重を記録</h2><div class="step"><strong>1.</strong> 「記録」→「体重を記録」を選びます。</div><div class="step"><strong>2.</strong> 測定日と体重を入力し、「保存する」を押します。</div><p>毎日測る必要はありません。体重試算では、測定日の異なる本人入力を使い、同じ日の複数測定は1日分として扱います。</p></section>
+
+    <section id="history"><h2>7. 記録の確認・修正</h2><p>「記録」タブには本人入力、AI自動推定、食品成分表による候補、補完候補を区別して表示します。記録を選ぶと内容の修正や削除ができます。</p><p>AI候補より本人が確認した食品・量・摂取割合を優先し、同じ食事を二重計上しません。</p></section>
+
+    <section id="gap"><h2>8. 空白期間の補完</h2><p>設定で補完を有効にすると、4～7日の空白について「普段通り」「普段と違った」「覚えていない」を任意で回答できます。</p><ul><li>「普段通り」と回答し、十分な過去記録がある場合だけ範囲の候補を作ります。</li><li>8日以上の中断は補完せず、今日から再開できる案内を表示します。</li><li>空白を食事なし・運動なし、0 kcalとは扱いません。</li><li>実記録を追加すると、その日の補完候補を置き換えます。</li></ul></section>
+
+    <section id="steps"><h2>9. 歩数の自動取り込み</h2><div class="step"><strong>1.</strong> 「設定」→「データと連携」→「歩数の自動取り込み」を開きます。</div><div class="step"><strong>2.</strong> Health Connectの説明を確認し、歩数の読み取りを許可します。</div><p>対応端末だけで利用できます。許可しなくても食事・運動・体重の手入力を利用できます。歩数は外部AIや本アプリのサーバーへ送りません。</p></section>
+
+    <section id="prediction"><h2>10. 体重変化の試算</h2><p>設定した活動状況、本人入力の体重傾向、十分に揃った食事・歩数・個別運動の記録を使って、現在の生活や任意の変更を試算します。</p><p class="note">現在は検証中です。必要な記録や健康確認が揃わない場合は数値を表示しません。医療判断や結果の保証ではありません。</p></section>
+
+    <section id="notification"><h2>11. 通知</h2><div class="step">「設定」から通知をオンにし、希望する時刻を選びます。</div><p>通知は初期状態でオフです。オンの場合も、記録のお知らせ、補完確認、生活の提案をまとめて1日1回まで表示します。端末の状態により時刻が遅れる場合があります。</p></section>
+
+    <section id="backup"><h2>12. バックアップと復元</h2><h3>バックアップ</h3><div class="step">「設定」→「データと連携」→「バックアップ・復元」から、パスワードを決めて保存先を選びます。</div><h3>復元</h3><div class="step">同じ画面からバックアップファイルを選び、作成時のパスワードを入力します。</div><p>AI、通知、歩数連携の許可は復元しません。復元後に必要な機能を確認して有効にしてください。</p></section>
+
+    <section id="privacy"><h2>13. データ利用と削除</h2><p>「設定」→「データと連携」→「このアプリが使うデータ」で、保存先、用途、外部送信、削除範囲を確認できます。</p><p>「端末内のデータをすべて削除する」を選ぶと、本アプリ内の記録、写真、設定、健康回答、歩数を削除します。書き出したバックアップ、元の写真、Health Connect内の原記録は削除しません。</p><p><a href="../privacy-policy/">プライバシーポリシーを確認する</a></p></section>
+
+    <section id="trouble"><h2>14. 困ったとき</h2><h3>AI解析が完了しない</h3><p>元の食事記録は保存されています。通信状態を確認し、記録詳細の再試行を使用してください。同じ要求を照合し、重複送信を抑えます。</p><h3>写真撮影後に画面が戻った</h3><p>「記録」タブに「保存前の写真」または「撮影前の入力」が表示された場合は、そこから再開できます。</p><h3>歩数が表示されない</h3><p>Health Connectの権限、対応端末、取得元アプリの記録を確認してください。歩数がなくても他の記録は利用できます。</p><h3>記録が途切れた</h3><p>過去分をすべて埋める必要はありません。その日の記録から再開してください。</p></section>
+
+    <p><a href="../">公開文書トップへ戻る</a></p>
+  </main>
+  <footer><div class="wrap">© 2026 きょうからダイエット</div></footer>
+</body>
+</html>
