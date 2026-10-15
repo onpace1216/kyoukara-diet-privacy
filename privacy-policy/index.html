@@ -37,25 +37,25 @@
 
     <section><h2>4. Health Connect</h2><p>歩数連携は初期状態で無効です。利用者が許可した場合だけHealth Connectから日別歩数を読み取ります。歩数の書き込み、位置情報、心拍等は要求しません。読み取った歩数は端末内に保存し、AI解析や本アプリのサーバーへ送りません。</p></section>
 
-    <section><h2>4. 食事のAI解析</h2><p>食事のAI解析は初期状態で無効です。利用者がアプリ内説明を確認して有効にした場合だけ、保存した食事写真と短文を、Railway上の中継サーバー経由でAnthropicのClaude APIへ送ります。料理、量、カロリーの範囲、確認事項を作る目的に限って使用します。</p><p>年齢、身長、体重、健康状態への回答、歩数、過去の記録はAnthropicへ送りません。解析結果は推定であり、医療判断や確定値ではありません。</p><p>中継サーバーは食事写真・短文をデータベースへ保存せず、本文をアプリの実行ログへ出しません。アプリ再起動後の結果取得と二重送信・二重課金防止のため、AI解析結果を最大7日間だけ処理台帳へ保存します。匿名のインストール識別子、公開鍵、要求の不可逆な照合値、処理状態、利用トークン数、推定費用、固定失敗コードは最大62日間保存します。</p><p>Anthropic APIの入力と出力は、適用されるAnthropicのAPI条件に従って処理されます。本アプリはAnthropicへのフィードバック送信や学習参加を行いません。</p></section>
+    <section><h2>5. 食事のAI解析</h2><p>食事のAI解析は初期状態で無効です。利用者がアプリ内説明を確認して有効にした場合だけ、保存した食事写真と短文を、Railway上の中継サーバー経由でAnthropicのClaude APIへ送ります。料理、量、カロリーの範囲、確認事項を作る目的に限って使用します。</p><p>年齢、身長、体重、健康状態への回答、歩数、過去の記録はAnthropicへ送りません。解析結果は推定であり、医療判断や確定値ではありません。</p><p>中継サーバーは食事写真・短文をデータベースへ保存せず、本文をアプリの実行ログへ出しません。アプリ再起動後の結果取得と二重送信・二重課金防止のため、AI解析結果を最大7日間だけ処理台帳へ保存します。匿名のインストール識別子、公開鍵、要求の不可逆な照合値、処理状態、利用トークン数、推定費用、固定失敗コードは最大62日間保存します。</p><p>Anthropic APIの入力と出力は、適用されるAnthropicのAPI条件に従って処理されます。本アプリはAnthropicへのフィードバック送信や学習参加を行いません。</p></section>
 
-    <section><h2>5. アプリ確認と通信ログ</h2><p>不正利用を抑えるため、Google Play Integrity APIでアプリと端末環境の判定情報を処理します。これは利用者本人の身元確認を目的としません。</p><p>Railwayは、通信日時、要求経路、応答状態、通信量、処理時間、送信元IP、User-Agent等の運用情報を処理する場合があります。送信元IPは位置情報機能に使用しません。アプリが出力するログは経路、状態、固定エラーコードに限定し、食事写真、短文、健康情報、歩数、認証トークンを出力しません。インフラの運用ログは、適用されるRailwayの契約プランと設定に従って保持・削除されます。</p></section>
+    <section><h2>6. アプリ確認と通信ログ</h2><p>不正利用を抑えるため、Google Play Integrity APIでアプリと端末環境の判定情報を処理します。これは利用者本人の身元確認を目的としません。</p><p>Railwayは、通信日時、要求経路、応答状態、通信量、処理時間、送信元IP、User-Agent等の運用情報を処理する場合があります。送信元IPは位置情報機能に使用しません。アプリが出力するログは経路、状態、固定エラーコードに限定し、食事写真、短文、健康情報、歩数、認証トークンを出力しません。インフラの運用ログは、適用されるRailwayの契約プランと設定に従って保持・削除されます。</p></section>
 
-    <section><h2>6. 通知</h2><p>通知は初期状態で無効です。利用者が許可した場合だけ、本人が選んだ時刻に1日1回まで端末へ表示します。通知設定は端末内に保存し、外部へ送りません。</p></section>
+    <section><h2>7. 通知</h2><p>通知は初期状態で無効です。利用者が許可した場合だけ、本人が選んだ時刻に1日1回まで端末へ表示します。通知設定は端末内に保存し、外部へ送りません。</p></section>
 
-    <section><h2>7. バックアップ</h2><p>利用者が操作した場合だけ、記録や写真等をパスワード付き暗号化ファイルへ書き出します。保存先は利用者が選択します。クラウドドライブを選択した場合、そのサービスの規約とプライバシーポリシーが適用されます。本アプリは書き出したファイルを自動収集しません。</p></section>
+    <section><h2>8. バックアップ</h2><p>利用者が操作した場合だけ、記録や写真等をパスワード付き暗号化ファイルへ書き出します。保存先は利用者が選択します。クラウドドライブを選択した場合、そのサービスの規約とプライバシーポリシーが適用されます。本アプリは書き出したファイルを自動収集しません。</p></section>
 
-    <section><h2>8. 削除</h2><p>アプリ内の全削除により、本アプリが端末内に保存した記録、写真、設定、健康回答、歩数を削除できます。利用者が外へ書き出したバックアップ、元の写真、Health Connect内の原記録は削除しません。</p><p>端末内の記録を削除しても、既に外部サービスへ送信されたデータの保持期間を短縮する操作にはなりません。現時点では、送信1件を指定して外部処理の削除を依頼する機能はありません。</p></section>
+    <section><h2>9. 削除</h2><p>アプリ内の全削除により、本アプリが端末内に保存した記録、写真、設定、健康回答、歩数を削除できます。利用者が外へ書き出したバックアップ、元の写真、Health Connect内の原記録は削除しません。</p><p>端末内の記録を削除しても、既に外部サービスへ送信されたデータの保持期間を短縮する操作にはなりません。現時点では、送信1件を指定して外部処理の削除を依頼する機能はありません。</p></section>
 
-    <section><h2>9. 利用者の選択</h2><p>AI解析、歩数連携、通知はそれぞれ任意で、後から無効にできます。AI解析を使わなくても、写真・短文・食品成分表による食事記録、体重、運動の記録を利用できます。</p></section>
+    <section><h2>10. 利用者の選択</h2><p>AI解析、歩数連携、通知はそれぞれ任意で、後から無効にできます。AI解析を使わなくても、写真・短文・食品成分表による食事記録、体重、運動の記録を利用できます。</p></section>
 
-    <section><h2>10. 未成年者</h2><p>本アプリの初期版は成人向けとして設計しています。未成年者向けの体重管理機能として一般公開しません。</p></section>
+    <section><h2>11. 未成年者</h2><p>本アプリの初期版は成人向けとして設計しています。未成年者向けの体重管理機能として一般公開しません。</p></section>
 
-    <section><h2>11. 改定</h2><p>機能、外部サービス、保存期間、法令等の変更に応じて本ポリシーを改定します。重要な変更がある場合は、アプリ内または配布ページで案内します。</p></section>
+    <section><h2>12. 改定</h2><p>機能、外部サービス、保存期間、法令等の変更に応じて本ポリシーを改定します。重要な変更がある場合は、アプリ内または配布ページで案内します。</p></section>
 
-    <section><h2>12. 外部サービス</h2><ul class="links"><li><a href="https://www.anthropic.com/" rel="noopener">Anthropic Claude API</a></li><li><a href="https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data" rel="noopener">Anthropic APIの保持</a></li><li><a href="https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training" rel="noopener">Anthropicの学習利用</a></li><li><a href="https://railway.com/" rel="noopener">Railway</a></li><li><a href="https://docs.railway.com/observability/logs" rel="noopener">Railwayログ</a></li><li><a href="https://developer.android.com/google/play/integrity" rel="noopener">Google Play Integrity API</a></li><li><a href="https://developer.android.com/health-and-fitness/guides/health-connect" rel="noopener">Health Connect</a></li></ul></section>
+    <section><h2>13. 外部サービス</h2><ul class="links"><li><a href="https://policies.google.com/privacy" rel="noopener">Googleプライバシーポリシー</a></li><li><a href="https://www.anthropic.com/" rel="noopener">Anthropic Claude API</a></li><li><a href="https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data" rel="noopener">Anthropic APIの保持</a></li><li><a href="https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training" rel="noopener">Anthropicの学習利用</a></li><li><a href="https://railway.com/" rel="noopener">Railway</a></li><li><a href="https://docs.railway.com/observability/logs" rel="noopener">Railwayログ</a></li><li><a href="https://developer.android.com/google/play/integrity" rel="noopener">Google Play Integrity API</a></li><li><a href="https://developer.android.com/health-and-fitness/guides/health-connect" rel="noopener">Health Connect</a></li></ul></section>
 
-    <section class="contact"><h2>13. 運営者・お問い合わせ</h2><p><strong>運営者：</strong>きょうからダイエット運営者</p><p>お問い合わせは、Google Playストアの本アプリ掲載ページに表示されるデベロッパー連絡先からお願いします。</p></section>
+    <section class="contact"><h2>14. 運営者・お問い合わせ</h2><p><strong>運営者：</strong>きょうからダイエット運営者</p><p>お問い合わせは、Google Playストアの本アプリ掲載ページに表示されるデベロッパー連絡先からお願いします。</p></section>
   </main>
   <footer><div class="wrap">© 2026 きょうからダイエット</div></footer>
 </body>
